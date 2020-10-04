@@ -152,6 +152,7 @@ a{
 	color: #777;
 }
 
+
 .btn::after{
 	content: ""; /* important */
 	display: inline-block;
@@ -253,19 +254,26 @@ a{
 
 .contact-text img{
 	position: absolute;
-	top: 20%;
+	top: 30%;
 	left: 30%;
 }
 
 .contact-text p{
 	color: #fff;
 	position: absolute;
-	top: 33%;
+	top: 43%;
 	left: 30%;
 }
 
-.icon{
-	margin-right:10px;
+.icon-logo{
+	color: #fff;
+	position: absolute;
+	top: 60%;
+	left: 30%;
+}
+
+.icon-logo span{
+	margin: 0px 6px;
 }
 
 .contact-input{
@@ -311,16 +319,50 @@ a{
 	border:1px solid #ae42c9;
 	color: #ae42c9;
 }
+/* =========================== 
+			OFFER CSS
+   =========================== */
+.offers{
+	margin-bottom: 15%;
+}
 
+.offer-img{
+	width: 60px;
+	height: 60px;
+	position: relative;
+	border-radius: 100%;
+}
+
+.offer-img span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20px;
+	text-align: center;
+}
+
+.offer-text p{
+	color: #777;
+	font-size: 1em;
+	margin-top: 15px;
+	line-height: 1.7rem;
+}
+
+/* =========================== 
+			OFFER CSS
+   =========================== */   
 .floating-text{
-	margin:80px 100px 100px 100px;
+	margin:80px 150px 150px 100px;
 	padding-bottom: 30px;
 }
 
 .item{
 	display: inline-block;
-	margin-right: 50px;
+	margin:0px 50px;
 	color: #ae42c9;
+	width: 80px;
+	height: 30px;
 }
 
 
@@ -330,7 +372,7 @@ a{
 
 .footer p{
 	text-align: center;
-	padding:20px 10vw;
+	padding:30px 10vw 0px 10vw;
 	color: #707070;
 }
 
@@ -343,13 +385,19 @@ a{
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 99;
+    z-index: 1001;
     font-size: 60px;
     border: none;
     outline: none;
     cursor: pointer;
+    text-decoration:none;
     border-radius: 100%;
    	color: #ae42c9;
+}
+
+.gotop:active,
+.gotop:hover{
+	color: #ae42c9;
 }
 
 .gotop:focus{
